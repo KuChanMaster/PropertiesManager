@@ -35,7 +35,7 @@
         delete from user
         where  id = #{id}
     </delete>
-
+<!--insert into user (id,username,password,...) values (null,'张三','1234'...)-->
     <insert id="insert" parameterType="com.example.entity.User" useGeneratedKeys="true">
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -48,6 +48,7 @@
                 <if test="avatar != null">avatar,</if>
                 <if test="role != null">role,</if>
         </trim>
+    <!-- 上、下顺序不可以相反，否则会 写入相反数据 -->
         <trim prefix="values (" suffix=")" suffixOverrides=",">
                 <if test="id != null">#{id},</if>
                 <if test="username != null">#{username},</if>
