@@ -122,7 +122,7 @@ public class AdminService {
      */
     public void updatePassword(Account account) {
         Admin dbAdmin = adminMapper.selectByUsername(account.getUsername());
-        if (ObjectUtil.isNull(dbAdmin)) {
+        if (ObjectUtil.isEmpty(dbAdmin)) {
             throw new CustomException(ResultCodeEnum.USER_NOT_EXIST_ERROR);
         }
         if (!account.getPassword().equals(dbAdmin.getPassword())) {

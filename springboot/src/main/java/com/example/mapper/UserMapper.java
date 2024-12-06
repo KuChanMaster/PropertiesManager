@@ -1,5 +1,6 @@
 package com.example.mapper;
 
+import com.example.entity.Account;
 import com.example.entity.User;
 import org.apache.ibatis.annotations.Select;
 
@@ -35,5 +36,15 @@ public interface UserMapper {
       * 查询所有
     */
     List<User> selectAll(User user);
+
+    /**
+      * 根据id查询
+    */
+    User selectById(Integer id);
+
+    /**
+      * 更该密码
+    */
+    void updatePassword(Account account);
 
 }

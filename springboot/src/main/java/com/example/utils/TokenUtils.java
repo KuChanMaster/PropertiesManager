@@ -7,7 +7,9 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.example.common.Constants;
 import com.example.common.enums.RoleEnum;
 import com.example.entity.Account;
+import com.example.mapper.AdminMapper;
 import com.example.service.AdminService;
+import com.example.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -28,13 +30,17 @@ public class TokenUtils {
     private static final Logger log = LoggerFactory.getLogger(TokenUtils.class);
 
     private static AdminService staticAdminService;
+    private static UserService staticUserService;
 
     @Resource
     AdminService adminService;
+    @Resource
+    UserService userService;
 
     @PostConstruct
     public void setUserService() {
         staticAdminService = adminService;
+        staticUserService = userService;
     }
 
     /**
@@ -45,7 +51,6 @@ public class TokenUtils {
                 .withExpiresAt(DateUtil.offsetHour(new Date(), 2)) // 2小时后token过期
                 .sign(Algorithm.HMAC256(sign)); // 以 password 作为 token 的密钥
     }
-
     /**
      * 获取当前登录的用户信息
      */
@@ -59,6 +64,9 @@ public class TokenUtils {
                 String role = userRole.split("-")[1];    // 获取角色
                 if (RoleEnum.ADMIN.name().equals(role)) {
                     return staticAdminService.selectById(Integer.valueOf(userId));
+                }
+                if (RoleEnum.USER.name().equals(role)) {
+                    return staticUserService.selectById(Integer.valueOf(userId));
                 }
             }
         } catch (Exception e) {
