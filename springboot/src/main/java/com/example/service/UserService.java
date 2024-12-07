@@ -48,6 +48,8 @@ public class UserService {
     }
 
     public void updateById(User user) {
+
+        System.out.println("ser"+user.toString());
         userMapper.updateById(user);
     }
 

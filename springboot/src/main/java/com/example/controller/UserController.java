@@ -1,6 +1,8 @@
 package com.example.controller;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.example.common.Result;
+import com.example.entity.Account;
 import com.example.entity.User;
 import com.example.service.UserService;
 import com.github.pagehelper.PageHelper;
@@ -34,6 +36,7 @@ public class UserController {
 
     @PutMapping("/update")
     public Result updateById(@RequestBody User user) {
+        System.out.println("con"+user.toString());
         userService.updateById(user);
         return Result.success();
     }
