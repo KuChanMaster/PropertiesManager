@@ -14,7 +14,6 @@ import com.example.service.AdminService;
 import com.example.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -61,6 +60,7 @@ public class JwtInterceptor implements HandlerInterceptor {
             if(RoleEnum.USER.name().equals(role)){
                 account = userService.selectById(Integer.valueOf(userId));
             }
+
         } catch (Exception e) {
             throw new CustomException(ResultCodeEnum.TOKEN_CHECK_ERROR);
         }
