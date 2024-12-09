@@ -48,8 +48,6 @@ public class UserService {
     }
 
     public void updateById(User user) {
-
-        System.out.println("ser"+user.toString());
         userMapper.updateById(user);
     }
 
@@ -79,7 +77,11 @@ public class UserService {
     }
 
     public User selectById(Integer id) {
-        return userMapper.selectById(id);
+        User dbuser = userMapper.selectById(id);
+        //生成token
+        String tokenData=dbuser.getId()+"-"+RoleEnum.USER.name();
+        String token=TokenUtils.createToken(tokenData,dbuser.getPassword());
+        return dbuser;
     }
 
 
@@ -99,5 +101,12 @@ public class UserService {
         }
         dbUser.setPassword(account.getNewPassword());
         userMapper.updateById(dbUser);
+    }
+
+    public void recharge(Double account) {
+        Account currentUser =TokenUtils.getCurrentUser();
+        User user=userMapper.selectById(currentUser.getId());
+        user.setAccount(user.getAccount()+account);
+        userMapper.updateById(user);
     }
 }

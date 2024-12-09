@@ -36,7 +36,6 @@ public class UserController {
 
     @PutMapping("/update")
     public Result updateById(@RequestBody User user) {
-        System.out.println("con"+user.toString());
         userService.updateById(user);
         return Result.success();
     }
@@ -51,5 +50,15 @@ public class UserController {
     public Result deleteBatch(@RequestBody List<Integer> ids) {
         userService.deleteBatch(ids);
         return Result.success();
+    }
+    @GetMapping("/recharge/{account}")
+    public Result recharge(@PathVariable Double account) {
+        userService.recharge(account);
+        return Result.success();
+    }
+    @GetMapping("/selectById/{id}")
+    public  Result selectById(Integer id){
+        User user=userService.selectById(id);
+        return Result.success(user);
     }
 }

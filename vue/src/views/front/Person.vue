@@ -60,17 +60,17 @@
     <!--充值弹出框-->
     <el-dialog title="个人充值" :visible.sync="rechargeVisible" width="30%" :close-on-click-modal="false"
                destroy-on-close>
-      <el-form :model="user" label-width="80px" style="padding-right: 20px">
+      <el-form label-width="80px" style="padding-right: 20px">
         <el-form-item label="充值金额">
           <el-input v-model="account" placeholder="请输入金额"></el-input>
         </el-form-item>
         <el-form-item label="支付方式">
-            <el-radio v-model="radio" label="alipay">支付宝</el-radio>
-            <el-radio v-modal="radio" label="weixin">腾讯</el-radio>
+          <el-radio v-model="type" label="aliPay">支付宝</el-radio>
+          <el-radio v-model="type" label="weiPay">微信</el-radio>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="rechargeVisible=false">取 消</el-button>
+        <el-button @click="rechargeVisible = false">取 消</el-button>
         <el-button type="primary" @click="recharge">确 定</el-button>
       </div>
     </el-dialog>
@@ -131,6 +131,32 @@ export default {
     },
     initRecharge() {
       this.rechargeVisible = true
+    },
+    getPerson(){
+      this.$get("/user/selectById/",this.user.id).then(res => {
+        if (res.code === '200') {
+          this.user = res.data
+          localStorage.setItem('xm-user', JSON.stringify(this.user))
+        }else{
+          this.$message.error(res.msg)
+        }
+      })
+    },
+    recharge(){
+      if (this.account === '') {
+        this.$message.warning('请输入正确充值金额')
+        return
+      }
+      this.$request.get("/user/recharge"+this.account).then(res => {
+        if (res.code === '200') {
+          this.$message.success('充值成功')
+          this.rechargeVisible = false
+          this.getPerson()
+        } else {
+          this.$message.error(res.msg)
+        }
+      })
+
     },
     handleAvatarSuccess(response, file, fileList) {
       // 把user的头像属性换成上传的图片的链接
