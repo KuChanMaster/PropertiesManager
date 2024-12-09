@@ -41,6 +41,10 @@ public class UserService {
         userMapper.insert(user);
     }
 
+    public List<User> selectAll(User user) {
+        return userMapper.selectAll(user);
+    }
+
     public PageInfo<User> selectPage(User user, Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         List<User> list = userMapper.selectAll(user);
@@ -81,9 +85,9 @@ public class UserService {
         //生成token
         String tokenData=dbuser.getId()+"-"+RoleEnum.USER.name();
         String token=TokenUtils.createToken(tokenData,dbuser.getPassword());
+        dbuser.setToken(token);
         return dbuser;
     }
-
 
     public void register(Account account) {
         User user = new User();

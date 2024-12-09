@@ -51,14 +51,20 @@ public class UserController {
         userService.deleteBatch(ids);
         return Result.success();
     }
+    @GetMapping("/selectById/{id}")
+    public  Result selectById(@PathVariable Integer id){
+        User user=userService.selectById(id);
+
+        return Result.success(user);
+    }
     @GetMapping("/recharge/{account}")
     public Result recharge(@PathVariable Double account) {
         userService.recharge(account);
         return Result.success();
     }
-    @GetMapping("/selectById/{id}")
-    public  Result selectById(Integer id){
-        User user=userService.selectById(id);
-        return Result.success(user);
+    @GetMapping("/selectAll")
+    public Result selectAll(User user){
+        List<User> list=userService.selectAll(user);
+        return Result.success(list);
     }
 }

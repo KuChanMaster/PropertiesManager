@@ -51,6 +51,7 @@ public class TokenUtils {
                 .withExpiresAt(DateUtil.offsetHour(new Date(), 2)) // 2小时后token过期
                 .sign(Algorithm.HMAC256(sign)); // 以 password 作为 token 的密钥
     }
+
     /**
      * 获取当前登录的用户信息
      */

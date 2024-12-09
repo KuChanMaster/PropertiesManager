@@ -129,25 +129,26 @@ export default {
         }
       })
     },
-    initRecharge() {
-      this.rechargeVisible = true
-    },
-    getPerson(){
-      this.$get("/user/selectById/",this.user.id).then(res => {
+    getPerson() {
+      this.$request('/user/selectById/' + this.user.id).then(res => {
         if (res.code === '200') {
           this.user = res.data
           localStorage.setItem('xm-user', JSON.stringify(this.user))
-        }else{
+        } else {
           this.$message.error(res.msg)
         }
       })
     },
-    recharge(){
-      if (this.account === '') {
+    initRecharge() {
+      this.rechargeVisible = true
+    },
+    //充值
+    recharge() {
+      if (this.account<=0) {
         this.$message.warning('请输入正确充值金额')
         return
       }
-      this.$request.get("/user/recharge"+this.account).then(res => {
+      this.$request.get('/user/recharge/' + this.account).then(res => {
         if (res.code === '200') {
           this.$message.success('充值成功')
           this.rechargeVisible = false
