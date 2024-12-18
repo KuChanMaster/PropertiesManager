@@ -76,7 +76,14 @@ export default {
     }
   },
   created() {
+    // 没有登录的话，直接跳转到登录页面
     if (!this.user.id) {
+      this.$router.push('/login')
+    }
+    // 不是管理员的话，直接跳转到登录页面
+    if (this.user.role === 'ADMIN') {
+      this.$router.push('/home')
+    }else {
       this.$router.push('/login')
     }
   },
@@ -84,6 +91,7 @@ export default {
     updateUser() {
       this.user = JSON.parse(localStorage.getItem('xm-user') || '{}')   // 重新获取下用户的最新信息
     },
+
     goToPerson() {
       if (this.user.role === 'ADMIN') {
         this.$router.push('/adminPerson')

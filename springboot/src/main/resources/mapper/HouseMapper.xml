@@ -14,6 +14,7 @@
         left join user on house.user_id = user.id
         <where>
             <if test="code != null"> and house.code like concat('%', #{code}, '%')</if>
+            <if test="userId != null"> and house.user_id =#{userId}</if>
             <if test="userName != null"> and user.name like concat('%', #{userName}, '%')</if>
         </where>
         order by id desc

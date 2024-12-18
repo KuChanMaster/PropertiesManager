@@ -28,7 +28,6 @@ import java.util.Date;
 public class TokenUtils {
 
     private static final Logger log = LoggerFactory.getLogger(TokenUtils.class);
-
     private static AdminService staticAdminService;
     private static UserService staticUserService;
 
