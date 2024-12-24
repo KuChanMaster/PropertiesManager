@@ -8,7 +8,5 @@ public class Parking implements Serializable {
     private Integer id;
     private String code;
     private Integer userId;
-
     private String userName;
-
 }

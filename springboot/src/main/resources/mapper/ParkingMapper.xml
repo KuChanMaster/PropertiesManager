@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.ParkingMapper">
+
+    <sql id="Base_Column_List">
+        id,code,user_id
+    </sql>
+
+    <select id="selectAll" resultType="com.example.entity.Parking">
+        select house.*, user.name as userName
+        from house
+        left join user on house.user_id = user.id
+        <where>
+            <if test="code != null"> and parking.code like concat('%', #{code}, '%')</if>
+            <if test="userId != null"> and parking.user_id =#{userId}</if>
+            <if test="userName != null"> and user.name like concat('%', #{userName}, '%')</if>
+        </where>
+        order by id desc
+    </select>
+
+    <select id="selectById" resultType="com.example.entity.Parking">
+        select
+        <include refid="Base_Column_List" />
+        from house
+        where id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        delete from house
+        where  id = #{id}
+    </delete>
+
+    <insert id="insert" parameterType="com.example.entity.Parking" useGeneratedKeys="true">
+        insert into house
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="code != null">code,</if>
+            <if test="userId != null">user_id,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="code != null">#{code},</if>
+            <if test="userId != null">#{userId},</if>
+        </trim>
+    </insert>
+    <!--id,code,user_id,building,unit,area,type,content-->
+    <update id="updateById" parameterType="com.example.entity.Parking">
+        update house
+        <set>
+            <if test="code != null">
+                code = #{code},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>

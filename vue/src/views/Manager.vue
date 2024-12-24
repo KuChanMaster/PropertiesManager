@@ -44,6 +44,7 @@
             </template>
             <el-menu-item index="/notice">公告信息</el-menu-item>
             <el-menu-item index="/house">房屋信息</el-menu-item>
+            <el-menu-item index="/parking">停车信息</el-menu-item>
 
           </el-submenu>
 
