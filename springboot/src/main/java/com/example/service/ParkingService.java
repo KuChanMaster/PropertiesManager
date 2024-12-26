@@ -21,12 +21,14 @@ public class ParkingService {
     public void add(Parking parking) {
         parkingMapper.insert(parking);
     }
+
     /**
      * 删除
      */
     public void deleteById(Integer id) {
         parkingMapper.deleteById(id);
     }
+
     /**
      * 批量删除
      */
@@ -35,24 +37,28 @@ public class ParkingService {
             parkingMapper.deleteById(id);
         }
     }
+
     /**
      * 修改
      */
     public void updateById(Parking parking) {
         parkingMapper.updateById(parking);
     }
+
     /**
      * 根据ID查询
      */
     public Parking selectById(Integer id) {
         return parkingMapper.selectById(id);
     }
+
     /**
      * 查询所有
      */
     public List<Parking> selectAll(Parking parking) {
         return parkingMapper.selectAll(parking);
     }
+
     /**
      * 分页查询
      */

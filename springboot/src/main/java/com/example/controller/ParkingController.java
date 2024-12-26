@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/parking")
 public class ParkingController {
+
     @Resource
     private ParkingService parkingService;
 
@@ -64,7 +65,7 @@ public class ParkingController {
      * 查询所有
      */
     @GetMapping("/selectAll")
-    public Result selectAll(Parking parking) {
+    public Result selectAll(Parking parking ) {
         List<Parking> list = parkingService.selectAll(parking);
         return Result.success(list);
     }
@@ -79,4 +80,5 @@ public class ParkingController {
         PageInfo<Parking> page = parkingService.selectPage(parking, pageNum, pageSize);
         return Result.success(page);
     }
+
 }

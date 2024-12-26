@@ -9,12 +9,12 @@
     </sql>
 
     <select id="selectAll" resultType="com.example.entity.Parking">
-        select house.*, user.name as userName
-        from house
-        left join user on house.user_id = user.id
+        select parking.*, user.name as userName
+        from parking
+        left join user on parking.user_id = user.id
         <where>
             <if test="code != null"> and parking.code like concat('%', #{code}, '%')</if>
-            <if test="userId != null"> and parking.user_id =#{userId}</if>
+            <if test="userId != null"> and parking.user_id = #{userId}</if>
             <if test="userName != null"> and user.name like concat('%', #{userName}, '%')</if>
         </where>
         order by id desc
@@ -23,17 +23,17 @@
     <select id="selectById" resultType="com.example.entity.Parking">
         select
         <include refid="Base_Column_List" />
-        from house
+        from parking
         where id = #{id}
     </select>
 
     <delete id="deleteById">
-        delete from house
+        delete from parking
         where  id = #{id}
     </delete>
 
     <insert id="insert" parameterType="com.example.entity.Parking" useGeneratedKeys="true">
-        insert into house
+        insert into parking
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">id,</if>
             <if test="code != null">code,</if>
@@ -47,7 +47,7 @@
     </insert>
     <!--id,code,user_id,building,unit,area,type,content-->
     <update id="updateById" parameterType="com.example.entity.Parking">
-        update house
+        update parking
         <set>
             <if test="code != null">
                 code = #{code},

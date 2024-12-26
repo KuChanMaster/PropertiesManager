@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="search">
-      <el-input placeholder="请输入房屋号查询" style="width: 200px" v-model="code"></el-input>
+      <el-input placeholder="请输入车位号查询" style="width: 200px" v-model="code"></el-input>
       <el-input placeholder="请输入业主姓名查询" style="margin-left: 5px; width: 200px" v-model="userName"></el-input>
       <el-button type="info" plain style="margin-left: 10px" @click="load(1)">查询</el-button>
       <el-button type="warning" plain style="margin-left: 10px" @click="reset">重置</el-button>
@@ -16,13 +16,8 @@
       <el-table :data="tableData" stripe  @selection-change="handleSelectionChange">
         <el-table-column type="selection" width="55" align="center"></el-table-column>
         <el-table-column prop="id" label="序号" width="80" align="center" sortable></el-table-column>
-        <el-table-column prop="code" label="房屋号" show-overflow-tooltip></el-table-column>
+        <el-table-column prop="code" label="车位号" show-overflow-tooltip></el-table-column>
         <el-table-column prop="userName" label="业主" show-overflow-tooltip></el-table-column>
-        <el-table-column prop="building" label="楼栋号"></el-table-column>
-        <el-table-column prop="unit" label="单元号"></el-table-column>
-        <el-table-column prop="area" label="面积/㎡"></el-table-column>
-        <el-table-column prop="type" label="房型"></el-table-column>
-        <el-table-column prop="content" label="附加说明"></el-table-column>
 
         <el-table-column label="操作" width="180" align="center">
           <template v-slot="scope">
@@ -56,21 +51,6 @@
             <el-option v-for="item in userData" :key="item.value" :label="item.name" :value="item.id"></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item prop="building" label="楼栋号">
-          <el-input v-model="form.building" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item prop="unit" label="单元号">
-          <el-input v-model="form.unit" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item prop="area" label="面积/㎡">
-          <el-input v-model="form.area" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item prop="type" label="房型">
-          <el-input v-model="form.type" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item prop="content" label="附加内容">
-          <el-input type="textarea" :rows="5" v-model="form.content" autocomplete="off"></el-input>
-        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="fromVisible = false">取 消</el-button>
@@ -100,21 +80,6 @@ export default {
         code: [
           {required: true, message: '请输入房屋号', trigger: 'blur'},
         ],
-        building: [
-          {required: true, message: '请输入楼栋号', trigger: 'blur'},
-        ],
-        unit: [
-          {required: true, message: '请输入单元号', trigger: 'blur'},
-        ],
-        area: [
-          {required: true, message: '请输入面积', trigger: 'blur'},
-        ],
-        type: [
-          {required: true, message: '请输入房型', trigger: 'blur'},
-        ],
-        userId: [
-          {required: true, message: '请选择业主', trigger: 'blur'},
-        ]
       },
       ids: [],
       userData: []
