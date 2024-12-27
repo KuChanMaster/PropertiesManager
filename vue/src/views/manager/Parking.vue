@@ -41,9 +41,9 @@
     </div>
 
 
-    <el-dialog title="房屋信息" :visible.sync="fromVisible" width="40%" :close-on-click-modal="false" destroy-on-close>
+    <el-dialog title="车位信息" :visible.sync="fromVisible" width="40%" :close-on-click-modal="false" destroy-on-close>
       <el-form label-width="100px" style="padding-right: 50px" :model="form" :rules="rules" ref="formRef">
-        <el-form-item prop="code" label="房屋号">
+        <el-form-item prop="code" label="车位号">
           <el-input v-model="form.code" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item prop="userId" label="业主">
@@ -78,7 +78,7 @@ export default {
       user: JSON.parse(localStorage.getItem('xm-user') || '{}'),
       rules: {
         code: [
-          {required: true, message: '请输入房屋号', trigger: 'blur'},
+          {required: true, message: '请输入车位号', trigger: 'blur'},
         ],
       },
       ids: [],
