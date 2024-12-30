@@ -25,6 +25,7 @@ const routes = [
       { path: 'user', name: 'User', meta: { name: '业主信息' }, component: () => import('../views/manager/User') },
       { path: 'house', name: 'House', meta: { name: '房屋信息' }, component: () => import('../views/manager/House') },
       { path: 'parking', name: 'Parking', meta: { name: '车位信息' }, component: () => import('../views/manager/Parking') },
+      { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/manager/Charges') },
     ]
   },
   {
@@ -36,6 +37,8 @@ const routes = [
       { path: 'person', name: 'Person', meta: { name: '个人信息' }, component: () => import('../views/front/Person') },
       { path: 'house', name: 'House', meta: { name: '我的住房' }, component: () => import('../views/front/House') },
       { path: 'parking', name: 'Parking', meta: { name: '我的车位' }, component: () => import('../views/front/Parking') },
+      { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/front/Charges') },
+
     ]
   },
   { path: '/login', name: 'Login', meta: { name: '登录' }, component: () => import('../views/Login.vue') },

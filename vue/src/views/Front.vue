@@ -36,6 +36,9 @@
                 <div style="text-decoration: none" @click="navTo('/front/Parking')">我的车位</div>
               </el-dropdown-item>
               <el-dropdown-item>
+                <div style="text-decoration: none" @click="navTo('/front/Charges')">我的缴费</div>
+              </el-dropdown-item>
+              <el-dropdown-item>
                 <div style="text-decoration: none" @click="logout">退出</div>
               </el-dropdown-item>
 
