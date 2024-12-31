@@ -39,6 +39,9 @@
                 <div style="text-decoration: none" @click="navTo('/front/Charges')">我的缴费</div>
               </el-dropdown-item>
               <el-dropdown-item>
+                <div style="text-decoration: none" @click="navTo('/front/Complaint')">建议与投诉</div>
+              </el-dropdown-item>
+              <el-dropdown-item>
                 <div style="text-decoration: none" @click="logout">退出</div>
               </el-dropdown-item>
 

@@ -1,11 +1,11 @@
 .manager-container {
-    background-color: #f8f8ff;
+    background-color: #f4f5f7; /* 主背景颜色 */
     min-height: 100vh;
 }
 
 .manager-header {
     display: flex;
-    background-color: #2c334c;
+    background-color: #1e73be; /* 头部背景颜色 */
 }
 
 .manager-header-left {
@@ -13,7 +13,7 @@
     height: 60px;
     padding-left: 10px;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .manager-header-left img {
@@ -26,14 +26,14 @@
     margin-left: 5px;
     font-size: 20px;
     font-weight: bold;
-    color: #ddd
+    color: #ffffff; /* 白色文字 */
 }
 
 .manager-header-center {
     flex: 1;
     width: 0;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .manager-header-right {
@@ -47,15 +47,15 @@
     display: flex;
     align-items: center;
     padding-right: 10px;
-    color: #ccc;
-    cursor: default
+    color: #ffffff; /* 白色文字 */
+    cursor: default;
 }
 
 .manager-header-right .avatar img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 5px
+    margin-right: 5px;
 }
 
 .manager-main {
@@ -65,7 +65,9 @@
 .manager-main-left {
     width: 200px;
     min-height: calc(100vh - 60px);
-    box-shadow: 0 0 6px rgba(0, 21, 41, .35);
+    background-color: #1e73be; /* 侧边栏背景色 */
+    color: #ffffff; /* 白色文字 */
+    box-shadow: 0 0 6px rgba(0, 21, 41, 0.35);
 }
 
 .manager-main-right {
@@ -76,7 +78,7 @@
 
 .manager-main-right .search {
     padding: 10px;
-    background-color: #fff;
+    background-color: #ffffff; /* 白色卡片背景 */
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -84,17 +86,17 @@
 .manager-main-right .operation {
     margin-top: 5px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .manager-main-right .table {
     margin-top: 5px;
     padding: 15px 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 .manager-main-right .table .pagination {
@@ -103,7 +105,7 @@
 
 .card {
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -112,25 +114,25 @@
 .el-menu {
     width: 200px;
     height: 100%;
-    background-color: #222b40;
+    background-color: #1e73be; /* 侧边栏菜单背景色 */
 }
 
 .el-submenu__title {
-    color: #ccc;
+    color: #ffffff; /* 白色文字 */
     height: 50px;
     line-height: 50px;
 }
 
 .el-menu-item {
-    color: #ccc;
+    color: #ffffff; /* 白色文字 */
     height: 50px;
     line-height: 50px;
-    background-color: #222b40 !important; /* 必须加上这个背景色，否则鼠标离开会出现白色 */
+    background-color: #1e73be !important; /* 保持背景一致 */
 }
 
 .el-menu-item.is-active {
-    /*background-color: #2bb7e5 !important;*/
-    /*color: #fff;*/
+    background-color: #8c939d !important; /* 激活状态颜色 */
+    color: #ffffff !important;
 }
 
 .el-menu--inline .el-menu-item {
@@ -138,32 +140,24 @@
 }
 
 .el-menu .is-active {
-    color: #3399ff !important;
+    color: #666666 !important; /* 激活状态文字颜色 */
 }
 
 .el-submenu__title:hover {
-    background-color: #222 !important;
+    background-color: #1a5e96 !important; /* 悬停颜色 */
 }
 
 .el-menu-item:not(.is-active):hover {
-    /*background-color: #0376bf !important;*/
-    /*color: #fff;*/
-}
-
-.el-menu-item:hover {
-    background-color: #222 !important;
-}
-
-.el-submenu__icon-arrow {
-    margin-top: -5px;
+    background-color: #1a5e96 !important; /* 悬停颜色 */
 }
 
 .el-breadcrumb__inner {
-    color: #ccc !important;
+    color: #ffffff !important; /* 面包屑文字颜色 */
 }
 
 .el-dropdown-menu {
     margin-top: 20px !important;
+    background-color: #ffffff; /* 白色背景 */
 }
 
 .el-breadcrumb {
@@ -171,6 +165,6 @@
 }
 
 th.el-table__cell {
-    background-color: #f8f8f8 !important;
-    color: #666;
+    background-color: #f4f5f7 !important; /* 表格头部背景色 */
+    color: #333333; /* 表格文字颜色 */
 }

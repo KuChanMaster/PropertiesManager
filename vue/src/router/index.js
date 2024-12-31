@@ -26,6 +26,7 @@ const routes = [
       { path: 'house', name: 'House', meta: { name: '房屋信息' }, component: () => import('../views/manager/House') },
       { path: 'parking', name: 'Parking', meta: { name: '车位信息' }, component: () => import('../views/manager/Parking') },
       { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/manager/Charges') },
+      { path: 'visitor', name: 'Visitor', meta: { name: '访客信息' }, component: () => import('../views/manager/Visitor') },
     ]
   },
   {
@@ -38,6 +39,7 @@ const routes = [
       { path: 'house', name: 'House', meta: { name: '我的住房' }, component: () => import('../views/front/House') },
       { path: 'parking', name: 'Parking', meta: { name: '我的车位' }, component: () => import('../views/front/Parking') },
       { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/front/Charges') },
+      { path: 'complaint', name: 'Complaint', meta: { name: '缴费信息' }, component: () => import('../views/front/Complaint') },
 
     ]
   },
@@ -60,7 +62,7 @@ const router = new VueRouter({
 //       if (user.role === 'USER') {
 //         next('/front/home')
 //       } else {
-//         next('/home')w
+//         next('/home')
 //       }
 //     } else {
 //       next('/login')
