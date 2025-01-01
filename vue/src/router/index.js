@@ -27,6 +27,7 @@ const routes = [
       { path: 'parking', name: 'Parking', meta: { name: '车位信息' }, component: () => import('../views/manager/Parking') },
       { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/manager/Charges') },
       { path: 'visitor', name: 'Visitor', meta: { name: '访客信息' }, component: () => import('../views/manager/Visitor') },
+      { path: 'complaint', name: 'Complaint', meta: { name: '投诉/建议信息' }, component: () => import('../views/manager/Complaint.vue') },
     ]
   },
   {
