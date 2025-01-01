@@ -9,7 +9,7 @@
       <el-button style="padding: 12px 25px" type="primary" @click="commit">提交</el-button>
     </div>
     <div style="front-size:16px;margin-top: 30px;font-weight: bold;color: #666666">
-      您的反馈:{{ tableData.length }}}
+      您的反馈总数:{{ tableData.length }}条
     </div>
     <div style="font-size: 18px;margin-top: 20px">
       <el-table :data="tableData" stripe>
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "Complaint",
+
   data() {
     return {
       user: JSON.parse(localStorage.getItem('xm-user') || '{}'),
@@ -45,7 +45,7 @@ export default {
         if (res.code === '200') {
           this.tableData = res.data
         } else {
-          this.$massage.error(res.msg)
+          this.$message.error(res.msg)
         }
       })
     },
@@ -55,11 +55,11 @@ export default {
       }
       this.$request.post("/complaint/add", data).then(res => {
         if (res.code === '200') {
-          this.massage.success("反馈成功，我们会尽快处理您反馈的问题")
+          this.$message.success("反馈成功，我们会尽快处理您反馈的问题")
           this.content = null
           this.load()
         } else {
-          this.massage.error(res.msg)
+          this.$message.error(res.msg)
         }
       })
     }
