@@ -12,6 +12,9 @@
           <el-menu :default-active="$route.path" mode="horizontal" router>
             <el-menu-item index="/front/home">首页</el-menu-item>
             <el-menu-item index="/front/person">个人中心</el-menu-item>
+            <el-menu-item index="/front/#">社区活动</el-menu-item>
+            <el-menu-item index="/front/fixed">物业报修</el-menu-item>
+            <el-menu-item index="/front/complaint">投诉建议</el-menu-item>
           </el-menu>
         </div>
       </div>
