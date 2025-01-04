@@ -28,6 +28,9 @@ const routes = [
       { path: 'charges', name: 'Charges', meta: { name: '缴费信息' }, component: () => import('../views/manager/Charges') },
       { path: 'visitor', name: 'Visitor', meta: { name: '访客信息' }, component: () => import('../views/manager/Visitor') },
       { path: 'complaint', name: 'Complaint', meta: { name: '投诉/建议信息' }, component: () => import('../views/manager/Complaint.vue') },
+      { path: 'fixed', name: 'Fixed', meta: { name: '我要报修' }, component: () => import('../views/manager/Fixed.vue') },
+      { path: 'activity', name: 'Activity', meta: { name: '社区活动' }, component: () => import('../views/manager/Activity') },
+
     ]
   },
   {

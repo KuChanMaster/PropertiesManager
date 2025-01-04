@@ -48,6 +48,8 @@
             <el-menu-item index="/charges">缴费信息</el-menu-item>
             <el-menu-item index="/visitor">访客信息</el-menu-item>
             <el-menu-item index="/complaint">投诉/建议信息</el-menu-item>
+            <el-menu-item index="/fixed">物业维修信息</el-menu-item>
+            <el-menu-item index="/activity">社区活动信息</el-menu-item>
           </el-submenu>
 
           <el-submenu index="user">

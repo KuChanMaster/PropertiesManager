@@ -77,7 +77,7 @@ export default {
 .login-card {
   width: 500px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #fbd17b;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -105,7 +105,7 @@ export default {
 }
 
 .login-button:hover {
-  background-color: #2a60c9;
+  background-color: #fbd17b;
   border-color: #2a60c9;
 }
 
