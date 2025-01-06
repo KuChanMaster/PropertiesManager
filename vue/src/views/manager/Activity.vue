@@ -18,7 +18,7 @@
         <el-table-column prop="title" label="标题" show-overflow-tooltip></el-table-column>
         <el-table-column prop="content" label="介绍">
           <template v-slot="scope">
-            <el-button type="primary" @click="viewEditor(scope.row.content)">点击查看</el-button>
+            <el-button type="primary" @click="viewContent(scope.row.content)">点击查看</el-button>
           </template>
         </el-table-column>
         <el-table-column prop="time" label="发布时间"></el-table-column>
@@ -50,13 +50,17 @@
           <el-input v-model="form.title" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item prop="content" label="内容">
-          <el-input v-model="form.content" type="textarea" autocomplete="off"></el-input>
+          <div id="editor"></div>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="fromVisible = false">取 消</el-button>
         <el-button type="primary" @click="save">确 定</el-button>
       </div>
+    </el-dialog>
+    <el-dialog title="详细信息" :visible.sync="viewVisible" width="55%" :close-on-click-modal="false" destroy-on-close>
+        <div v-html="viewData" class="w-e-text w-e-text-container">
+        </div>
     </el-dialog>
   </div>
 </template>
@@ -73,24 +77,17 @@ export default {
       total: 0,
       title: null,
       fromVisible: false,
-      form: {
-        id:'',
-        title:'',
-        content:'',
-      },
+      form: {},
       user: JSON.parse(localStorage.getItem('xm-user') || '{}'),
       rules: {
         title: [
           {required: true, message: '请输入标题', trigger: 'blur'},
-        ],
-        content: [
-          {required: true, message: '请输入内容', trigger: 'blur'},
         ]
       },
       ids: [],
       editor: null,
       viewData: null,
-      viewVisible: false,
+      viewVisible:false,
     }
   },
   created() {
@@ -106,7 +103,7 @@ export default {
         this.editor.create()
         setTimeout(() => {
           this.editor.txt.html(content)
-        },100)
+        })
       })
     },
     handleAdd() {   // 新增数据
@@ -120,7 +117,6 @@ export default {
       this.fromVisible = true   // 打开弹窗
     },
     save() {   // 保存按钮触发的逻辑  它会触发新增或者更新
-      this.initWangEditor(this.form.content || '')
       this.$refs.formRef.validate((valid) => {
         if (valid) {
           //点击保存前在文本编辑器中拿到content的内容
@@ -141,7 +137,7 @@ export default {
         }
       })
     },
-    viewEditor(){
+    viewContent(content){
       this.viewData=content
       this.viewVisible=true
     },
