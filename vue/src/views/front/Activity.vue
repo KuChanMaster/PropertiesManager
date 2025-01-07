@@ -5,15 +5,16 @@
       <el-button type="info" plain style="margin-left: 10px" @click="load(1)">查询</el-button>
       <el-button type="warning" plain style="margin-left: 10px" @click="reset">重置</el-button>
     </div>
-    <div class="table">
+    <div>
       <el-table :data="tableData" stripe>
         <el-table-column prop="title" label="标题" show-overflow-tooltip></el-table-column>
-        <el-table-column prop="count" label="点赞" show-overflow-tooltip></el-table-column>
+        <el-table-column prop="count" label="点赞数" show-overflow-tooltip></el-table-column>
         <el-table-column prop="time" label="发布时间" show-overflow-tooltip></el-table-column>
-        <template>
-          <el-button plain type="primary" size="mini" @click="navTo('/front/detail?id=' + scope.row.id)">点击查看
-          </el-button>
-        </template>
+        <el-table-column label="操作" width="180" align="center">
+          <template v-slot="scope">
+            <el-button plain type="primary" size="mini" @click="navTo('/front/detail?id=' + scope.row.id)">点击查看</el-button>
+          </template>
+        </el-table-column>
       </el-table>
 
       <div class="pagination" style="margin-top: 20px">
@@ -33,13 +34,14 @@
 
 <script>
 export default {
-  name: "Activity",
+  name: "Parking",
   data() {
     return {
       tableData: [],  // 所有的数据
       pageNum: 1,   // 当前的页码
       pageSize: 10,  // 每页显示的个数
       total: 0,
+      title: null,
       user: JSON.parse(localStorage.getItem('xm-user') || '{}'),
     }
   },
@@ -53,7 +55,7 @@ export default {
         params: {
           pageNum: this.pageNum,
           pageSize: this.pageSize,
-          userId: this.title
+          title: this.title
         }
       }).then(res => {
         this.tableData = res.data?.list

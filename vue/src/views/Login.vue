@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="login-card">
-      <div class="login-title">欢迎使用小区物业管理系统</div>
+      <div class="login-title">欢迎使用安居小区物业管理系统</div>
       <el-form :model="form" :rules="rules" ref="formRef" class="login-form">
         <el-form-item prop="username">
           <el-input prefix-icon="el-icon-user" placeholder="请输入账号" v-model="form.username"></el-input>
