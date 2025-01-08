@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.PraiseMapper">
+
+    <sql id="Base_Column_List">
+        id,activity_id,user_id
+    </sql>
+
+    <select id="selectAll" resultType="com.example.entity.Praise">
+        select *
+        from praise
+        <where>
+            <if test="activityId != null"> and activity_id = #{activityId}</if>
+            <if test="userId != null"> and user_id = #{userId}</if>
+        </where>
+        order by id desc
+    </select>
+
+    <select id="selectById" resultType="com.example.entity.Praise">
+        select
+        <include refid="Base_Column_List" />
+        from praise
+        where id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        delete from praise
+        where  id = #{id}
+    </delete>
+
+    <insert id="insert" parameterType="com.example.entity.Praise" useGeneratedKeys="true">
+        insert into praise
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="activityId != null">activity_id,</if>
+            <if test="userId != null">user_id,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="activityId != null">#{activityId},</if>
+            <if test="userId != null">#{userId},</if>
+        </trim>
+    </insert>
+    <!--activity_id,user_id-->
+    <update id="updateById" parameterType="com.example.entity.Praise">
+        update praise
+        <set>
+            <if test="activityId != null">
+                activity_id = #{activityId},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>

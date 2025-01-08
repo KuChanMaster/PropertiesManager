@@ -3,7 +3,7 @@
     <!--  头部  -->
     <div class="manager-header">
       <div class="manager-header-left">
-        <img src="../assets/imgs/logo.png" />
+        <img src="../assets/imgs/logo1.png"/>
         <div class="title">后台管理系统</div>
       </div>
 
@@ -17,8 +17,8 @@
       <div class="manager-header-right">
         <el-dropdown placement="bottom">
           <div class="avatar">
-            <img :src="user.avatar || 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'" />
-            <div>{{ user.name ||  '管理员' }}</div>
+            <img :src="user.avatar || 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'"/>
+            <div>{{ user.name || '管理员' }}</div>
           </div>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item @click.native="goToPerson">个人信息</el-dropdown-item>
@@ -40,7 +40,7 @@
           </el-menu-item>
           <el-submenu index="info">
             <template slot="title">
-               <i class="el-icon-menu"></i><span>信息管理</span>
+              <i class="el-icon-menu"></i><span>信息管理</span>
             </template>
             <el-menu-item index="/notice">公告信息</el-menu-item>
             <el-menu-item index="/house">房屋信息</el-menu-item>
@@ -65,7 +65,7 @@
 
       <!--  数据表格  -->
       <div class="manager-main-right">
-        <router-view @update:user="updateUser" />
+        <router-view @update:user="updateUser"/>
       </div>
     </div>
 
@@ -88,9 +88,10 @@ export default {
     // 不是管理员的话，直接跳转到登录页面
     if (this.user.role === 'ADMIN') {
       this.$router.push('/home')
-    }else {
+    } else {
       this.$router.push('/login')
     }
+
   },
   methods: {
     updateUser() {

@@ -15,7 +15,7 @@
           @click="navTo('/front/complaint')"
           alt="Complaint">
       <img
-          src="@/assets/imgs/activity.jpg"
+          src="@/assets/imgs/activity.png"
           class="grid-image"
           @click="navTo('/front/activity')"
           alt="Activity">
