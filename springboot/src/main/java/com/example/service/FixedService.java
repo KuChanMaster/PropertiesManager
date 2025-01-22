@@ -16,13 +16,8 @@ import java.util.List;
 
 @Service
 public class FixedService {
-
     @Resource
     private FixedMapper fixedMapper;
-
-    /**
-     * 新增
-     */
     public void add(Fixed fixed) {
         if (ObjectUtil.isEmpty(fixed.getContent())) {
             throw new CustomException("-1", "物业报修内容不能为空");
@@ -31,42 +26,23 @@ public class FixedService {
         fixed.setName(currentUser.getName());
         fixed.setTime(DateUtil.now());
         fixed.setStatus("待处理");
-        fixedMapper.insert(fixed);
-    }
-
-    /**
-     * 删除
-     */
+        fixedMapper.insert(fixed);}
+    
     public void deleteById(Integer id) {
-        fixedMapper.deleteById(id);
-    }
-
-    /**
-     * 批量删除
-     */
+        fixedMapper.deleteById(id);}
     public void deleteBatch(List<Integer> ids) {
         for (Integer id : ids) {
             fixedMapper.deleteById(id);
         }
     }
-
-    /**
-     * 修改
-     */
     public void updateById(Fixed fixed) {
         fixedMapper.updateById(fixed);
     }
 
-    /**
-     * 根据ID查询
-     */
     public Fixed selectById(Integer id) {
         return fixedMapper.selectById(id);
     }
 
-    /**
-     * 查询所有
-     */
     public List<Fixed> selectAll(Fixed fixed) {
         return fixedMapper.selectAll(fixed);
     }
