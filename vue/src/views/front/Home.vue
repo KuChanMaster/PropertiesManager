@@ -9,18 +9,19 @@
     </div>
     <div class="header-text">高档小区 一流物业 诚挚为您服务</div>
     <div class="image-grid">
+
       <img
-          src="@/assets/imgs/complaint.jpg"
-          class="grid-image"
-          @click="navTo('/front/complaint')"
-          alt="Complaint">
-      <img
-          src="@/assets/imgs/activity.png"
+          src="../../assets/imgs/activity.jpg"
           class="grid-image"
           @click="navTo('/front/activity')"
           alt="Activity">
       <img
-          src="@/assets/imgs/fixed.jpg"
+          src="../../assets/imgs/complaint.jpg"
+          class="grid-image"
+          @click="navTo('/front/complaint')"
+          alt="Complaint">
+      <img
+          src="../../assets/imgs/fixed.jpg"
           class="grid-image"
           @click="navTo('/front/fixed')"
           alt="Fixed">

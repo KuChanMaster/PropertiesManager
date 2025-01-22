@@ -4,7 +4,7 @@
     <div class="manager-header">
       <div class="manager-header-left">
         <img src="../assets/imgs/logo1.png"/>
-        <div class="title">后台管理系统</div>
+        <div class="title">安居小区物业</div>
       </div>
 
       <div class="manager-header-center">
