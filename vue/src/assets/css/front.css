@@ -1,7 +1,8 @@
 .front-notice {
     padding: 5px 20px;
     color: #666;
-    font-size: 12px
+    font-size:22px;
+    height: 40px;
 }
 .front-header {
     display: flex;

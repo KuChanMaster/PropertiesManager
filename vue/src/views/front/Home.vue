@@ -9,7 +9,6 @@
     </div>
     <div class="header-text">高档小区 一流物业 诚挚为您服务</div>
     <div class="image-grid">
-
       <img
           src="../../assets/imgs/activity.jpg"
           class="grid-image"
@@ -28,7 +27,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {

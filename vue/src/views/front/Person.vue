@@ -144,10 +144,11 @@ export default {
     },
     //充值
     recharge() {
-      if (this.account<=0) {
+      if (this.account <= 0) {
         this.$message.warning('请输入正确充值金额')
         return
       }
+
       this.$request.get('/user/recharge/' + this.account).then(res => {
         if (res.code === '200') {
           this.$message.success('充值成功')
