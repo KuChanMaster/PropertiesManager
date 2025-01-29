@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10" pages="4">
   <diagram id="FgQ8mwDGQy4oUYOdyk1N" name="第 1 页">
-    <mxGraphModel dx="1493" dy="445" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2283" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,7 +38,7 @@
           <mxGeometry x="570" y="303" width="50" height="98" as="geometry" />
         </mxCell>
         <mxCell id="TrmeK2xgH7zXm6A_ZlRM-5" value="物业管理员" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="-100" y="303" width="40" height="80" as="geometry" />
+          <mxGeometry x="-60" y="327" width="40" height="80" as="geometry" />
         </mxCell>
         <mxCell id="TrmeK2xgH7zXm6A_ZlRM-7" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.02;entryY=0.678;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TrmeK2xgH7zXm6A_ZlRM-5" target="Pu8cevD-rksi1UCSuTNd-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
