@@ -381,7 +381,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QnoTzhfCDvD9vIIeVuJ7" name="第 3 页">
-    <mxGraphModel dx="786" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1429" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -711,20 +711,28 @@
         <mxCell id="LWnhAW_ceIxEPhgCRiFm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LWnhAW_ceIxEPhgCRiFm-5" target="LWnhAW_ceIxEPhgCRiFm-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LWnhAW_ceIxEPhgCRiFm-5" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;小区车位管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="755" y="420" width="100" height="40" as="geometry" />
+        <mxCell id="V2qtcdLJ75RfEnJMzCns-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LWnhAW_ceIxEPhgCRiFm-5" target="V2qtcdLJ75RfEnJMzCns-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="510" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="LWnhAW_ceIxEPhgCRiFm-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;业主房产记录查询&lt;/font&gt;" style="whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+        <mxCell id="LWnhAW_ceIxEPhgCRiFm-5" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;小区车位管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="795" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LWnhAW_ceIxEPhgCRiFm-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;业主车位记录查询&lt;/font&gt;" style="whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
           <mxGeometry x="680" y="507.5" width="40" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="LWnhAW_ceIxEPhgCRiFm-7" value="添加业主房产记录" style="whiteSpace=wrap;html=1;rounded=0;direction=south;" vertex="1" parent="1">
+        <mxCell id="LWnhAW_ceIxEPhgCRiFm-7" value="添加业主车位记录" style="whiteSpace=wrap;html=1;rounded=0;direction=south;" vertex="1" parent="1">
           <mxGeometry x="897" y="507.5" width="45" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="LWnhAW_ceIxEPhgCRiFm-8" value="业主房产查询" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+        <mxCell id="LWnhAW_ceIxEPhgCRiFm-8" value="所属业主车位查询" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
           <mxGeometry x="755" y="507.5" width="40" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="LWnhAW_ceIxEPhgCRiFm-10" value="修改房产信息" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+        <mxCell id="LWnhAW_ceIxEPhgCRiFm-10" value="修改车位信息" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
           <mxGeometry x="827" y="507.5" width="45" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="V2qtcdLJ75RfEnJMzCns-2" value="车位状态统计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="507.5" width="50" height="102.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1057,7 +1065,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-2" value="查询此业主车位信息" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="870" y="475" width="70" height="55" as="geometry" />
+          <mxGeometry x="870" y="490" width="70" height="55" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-7" target="zllsROyi-T-w225WocLh-2">
           <mxGeometry relative="1" as="geometry" />
@@ -1092,8 +1100,11 @@
         <mxCell id="zllsROyi-T-w225WocLh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-9" target="zllsROyi-T-w225WocLh-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="10VQTwM-MQKIFn1N9Qb7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-9" target="10VQTwM-MQKIFn1N9Qb7-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-9" value="添加车位信息" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="880" y="640" width="60" height="50" as="geometry" />
+          <mxGeometry x="880" y="630" width="60" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-10" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="700" y="567.5" width="30" height="30" as="geometry" />
@@ -1102,15 +1113,20 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="980" y="490" width="50" height="25" as="geometry" />
+          <mxGeometry x="980" y="505" width="50" height="25" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-16" target="zllsROyi-T-w225WocLh-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1090" y="665" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="10VQTwM-MQKIFn1N9Qb7-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-16" target="10VQTwM-MQKIFn1N9Qb7-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-16" value="修改车位信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="980" y="645" width="80" height="40" as="geometry" />
+          <mxGeometry x="980" y="632.5" width="80" height="45" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zllsROyi-T-w225WocLh-22" target="zllsROyi-T-w225WocLh-25">
           <mxGeometry relative="1" as="geometry">
@@ -1118,10 +1134,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-22" value="删除车位信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="645" width="80" height="40" as="geometry" />
+          <mxGeometry x="1100" y="635" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zllsROyi-T-w225WocLh-25" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1216" y="652.5" width="50" height="25" as="geometry" />
+          <mxGeometry x="1210" y="642.5" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="10VQTwM-MQKIFn1N9Qb7-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10VQTwM-MQKIFn1N9Qb7-1" target="10VQTwM-MQKIFn1N9Qb7-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10VQTwM-MQKIFn1N9Qb7-1" value="车位状态统计" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="722.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10VQTwM-MQKIFn1N9Qb7-5" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="730" width="50" height="25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
