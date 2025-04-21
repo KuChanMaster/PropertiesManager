@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.13" pages="4">
   <diagram id="FgQ8mwDGQy4oUYOdyk1N" name="第 1 页">
     <mxGraphModel dx="2020" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -381,7 +381,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QnoTzhfCDvD9vIIeVuJ7" name="第 3 页">
-    <mxGraphModel dx="144" dy="101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1200" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -807,18 +807,7 @@
         <mxCell id="8CDk2h99-8-722XeWAra-1" value="统&lt;div&gt;计&lt;/div&gt;&lt;div&gt;车&lt;/div&gt;&lt;div&gt;位&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;状&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;态&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="870" width="60" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="8CDk2h99-8-722XeWAra-2" target="8CDk2h99-8-722XeWAra-14" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1210" y="1040" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8CDk2h99-8-722XeWAra-2" target="8CDk2h99-8-722XeWAra-15" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8CDk2h99-8-722XeWAra-2" target="8CDk2h99-8-722XeWAra-17" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;发&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;布&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;公&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;告&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8CDk2h99-8-722XeWAra-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;发&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;布&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;信&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;息&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;管&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;理&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1220" y="870" width="50" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8CDk2h99-8-722XeWAra-3" value="统&lt;div&gt;计&lt;/div&gt;&lt;div&gt;投&lt;/div&gt;&lt;div&gt;诉&lt;/div&gt;&lt;div&gt;建&lt;/div&gt;&lt;div&gt;议&lt;/div&gt;&lt;div&gt;信&lt;/div&gt;&lt;div&gt;息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -826,15 +815,6 @@
         </mxCell>
         <mxCell id="8CDk2h99-8-722XeWAra-4" value="报&lt;div&gt;修&lt;/div&gt;&lt;div&gt;信&lt;/div&gt;&lt;div&gt;息&lt;/div&gt;&lt;div&gt;统&lt;br&gt;计&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1300" y="870" width="50" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-14" value="修&lt;div&gt;改&lt;/div&gt;&lt;div&gt;公&lt;/div&gt;&lt;div&gt;告&lt;/div&gt;&lt;div&gt;信&lt;/div&gt;&lt;div&gt;息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1150" y="1030" width="50" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-15" value="添&lt;div&gt;加&lt;/div&gt;&lt;div&gt;公&lt;/div&gt;&lt;div&gt;告&lt;/div&gt;&lt;div&gt;信&lt;/div&gt;&lt;div&gt;息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1290" y="1030" width="49" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="8CDk2h99-8-722XeWAra-17" value="删&lt;div&gt;除&lt;/div&gt;&lt;div&gt;公&lt;/div&gt;&lt;div&gt;告&lt;/div&gt;&lt;div&gt;信&lt;/div&gt;&lt;div&gt;息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="1030" width="50" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
