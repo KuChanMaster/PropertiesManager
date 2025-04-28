@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.13" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.13" pages="5">
   <diagram id="FgQ8mwDGQy4oUYOdyk1N" name="第 1 页">
     <mxGraphModel dx="2083" dy="574" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1424,6 +1424,41 @@
         </mxCell>
         <mxCell id="GggM92yIwC1h72YF-Hcl-12" value="修改公告信息" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1063" y="1001.41" width="90" height="47.18" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="8hcpbQjJOWjdA_ncyOKT" name="第 5 页">
+    <mxGraphModel dx="1915" dy="1063" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-1" value="&lt;font style=&quot;font-size: 31px;&quot;&gt;业主&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-2" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;管理员&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-3" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;报修&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-4" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;公告&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-5" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;车位&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-6" value="t&lt;font style=&quot;font-size: 36px;&quot;&gt;投诉&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-7" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;收费&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-8" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;点赞&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JOI5RpOUirpRzHCnNlNh-9" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;住房&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="50" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
